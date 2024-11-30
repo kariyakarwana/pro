@@ -1,0 +1,269 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    
+  }
+  
+
+  .container {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .logo{
+    width: 40%;
+    padding: 10px;
+  }
+  .logo img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+    padding-top: 80px;
+    padding-left: 20px;
+  }
+  .title{
+    width: 60%;
+    padding: 10px;
+  }
+  .title h1 {
+    margin: 0;
+    color: hsl(239, 100%, 30%);
+    font-family:Impact, sans-serif; /* This changes the font family */
+    font-size: 70px; /* Optional: Adjust the size as needed */
+    font-weight: bold;
+  }
+  
+  .title p {
+    margin: 5px 0;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  
+  .title small {
+    font-size: 15px;
+    color: #000000;
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    background-color: #F1F3F2;
+    color: #000000;
+    padding: 20px;
+  }
+  
+  .main-content p {
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #000000;
+  }
+  
+  .main-content ul {
+    display: flex;
+    flex-direction: column; /* Makes the list items stack vertically */
+    align-items: flex-start; /* Aligns the list items to the left */
+  }
+  
+  
+  .images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .images img {
+    width: 200px;
+    height: auto;
+  }
+  
+/* Clinic Details Table Styles */
+.time-table {
+  margin: 30px 0; /* Add some margin around the table */
+}
+
+.time-table table {
+  width: 80%; /* Adjust the width of the table */
+  margin: 0 auto; /* Center the table */
+  border-collapse: collapse; /* Merge cell borders */
+  text-align: center;
+  border: 2px solid #000; /* Border around the table */
+}
+
+.time-table th,
+.time-table td {
+  border: 1px solid #000; /* Border for each cell */
+  padding: 10px; /* Padding inside the cells */
+}
+
+.time-table th {
+  background-color: #f2f2f2; /* Optional: Add a background color to header */
+}
+
+  /* Footer Styles */
+  .footer {
+    text-align: center;
+    background-color: #F1F3F2;
+    color: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  hr{
+     width:90%;
+  }
+  
+  
+  /* Style for the updates container */
+  .updates {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically align items */
+    gap: 10px; /* Optional: Space between the text and the toggle */
+    padding: 10px; /* Optional: Add some padding around the container */
+  }
+  
+  /* Style for the switch */
+  .toggle-switch {
+    display: inline-block;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+  /* Hide default checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* Slider styling */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 24px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #4CAF50; /* Change color when toggle is on */
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+
+  /* Video Gallery Styles */
+.video-gallery {
+  background-color: #F1F3F2;
+  padding: 20px;
+  text-align: center;
+}
+
+.video-gallery h3 {
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between the videos */
+  flex-wrap: wrap; /* Allows wrapping if there are more than 2 videos */
+}
+
+.video-container iframe {
+  border: 2px solid #ddd; /* Optional: Add border around video */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust the iframe size if needed */
+@media (max-width: 1200px) {
+  .video-container iframe {
+    width: 450px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 800px) {
+  .video-container iframe {
+    width: 350px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .video-container {
+    flex-direction: column; /* Stack videos vertically on smaller screens */
+  }
+  .video-container iframe {
+    width: 100%;
+    height: auto; /* Adjust height to maintain aspect ratio */
+  }
+}
+
+
+
+/*Why shoud you connect with suwanari clinic*/
+.why {
+  display: flex; /* Enable flexbox */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space out the items */
+  background-color: #F1F3F2;
+  color: #000000;
+  padding: 20px;
+  font-size: large;
+}
+
+.det {
+  flex: 1; /* Allow this div to grow */
+  margin-right: 20px; /* Add space between the text and image */
+}
+
+.imm {
+  flex: 1; /* Allow this div to grow */
+}
+
+.imm img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: add some rounded corners */
+}

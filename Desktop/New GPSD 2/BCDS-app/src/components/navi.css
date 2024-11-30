@@ -1,0 +1,57 @@
+.naveBox {
+    background-color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px; /* Adjust as needed */
+  }
+  
+  .tabs {
+    display: flex;
+    align-items: center;
+  }
+  
+  .tabs a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .tabs a:hover {
+    text-decoration: underline;
+  }
+  
+  .sin {
+    display: inline-block;
+  }
+  
+  .sin a {
+    display: inline-block;
+    width: 100px;
+    background-color: rgb(255, 76, 186);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease;
+  }
+  
+  .sin a:hover {
+    text-decoration: none;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.8);
+    transform: translateY(-2px);
+  }
+  
+  .sin a:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+  }
